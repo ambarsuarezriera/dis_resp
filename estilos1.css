@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600|Sniglet&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Sniglet', cursive;
+  font-weight: normal;
+  margin: 1%;
+}
+
+
+
+header,
+footer {
+  width: 100%;
+  min-height: 50px;
+  background-color: #00563b;
+  padding: 4%;
+  transition: all 4s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+
+}
+
+
+nav {
+  text-align: right;
+  width: 35%;
+}
+
+nav:hover ul {
+  max-height: 500px
+}
+
+nav ul {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #00563b;
+  transition: 1s all;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  padding: 15%;
+  display: block;
+  text-align: center
+}
+
+
+main {
+  width: 96%;
+  min-height: 100px;
+  padding: 6%;
+  background-color: #fbb605;
+  margin: 0 auto;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 1% 2%;
+  display: inline-block;
+}
+
+a:link {}
+
+a:visited {}
+
+a:active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+a:hover {
+  border-bottom: 1px dotted white;
+}
+
+
+.aclaraciones {
+  font-style: italic;
+  font-weight: 300;
+  padding: 5%;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  margin-bottom: 17px;
+}
+
+
+@media screen and (min-width:634px) {
+
+  header, footer{padding:1%;}
+  nav {
+    width: 65%
+  }
+
+  nav img {
+    display: none
+  }
+
+  nav ul {
+    max-height: 500px;
+    display: flex;
+
+  }
+
+  nav ul li {width:20%}
+  nav ul li a {
+    padding: 17%
+  }
+
+
+}
+
+
+@media screen and (min-width:829px) {
+  p {
+    column-count: 2;
+    column-gap: 4%;
+  }
+}
+
+
